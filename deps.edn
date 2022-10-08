@@ -1,0 +1,8 @@
+{:paths ["src" "src/cljs"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        org.clojure/clojurescript {:mvn/version "1.11.60"}
+        org.apache.commons/commons-lang3 {:mvn/version "3.12.0"}
+        cjohansen/dumdom {:mvn/version "2022.09.28"}}
+ :aliases {:run {:main-opts ["-m" "framed.core"]}
+           :dev {:extra-paths ["resources"]
+                 :extra-deps {com.bhauman/figwheel-main {:mvn/version "0.2.18"}}}}}

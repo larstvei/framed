@@ -1,0 +1,9 @@
+{:main framed.core
+ :optimizations :none
+ :pretty-print true
+ :source-map true
+ :devcards true
+ :asset-path "/js/compiled/dev"
+ :output-to "resources/public/app.js"
+ :output-dir "resources/public/js/compiled/dev"}
+

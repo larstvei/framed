@@ -1,0 +1,6 @@
+Building the frontend isn't nice. But it is achievable with some copying and
+pasting!
+
+#+begin_src sh
+clojure -A:dev -m figwheel.main --build-once prod
+#+end_src
