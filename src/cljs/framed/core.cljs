@@ -3,15 +3,6 @@
             [framed.messages :refer [messages]]
             [clojure.string :as s]))
 
-
-(def kun-framed-regex #"Framed #(\d+)\n🎥 ([🟥🟩⬛ ]+)\n")
-
-(defn username [s]
-  (first (s/split s #" ")))
-
-(defn score->number [score]
-  (count (re-seq #"🟥" score)))
-
 (defn framed? [msg]
   (= (:type msg) :framed))
 
@@ -20,15 +11,6 @@
     (-> (reduce + scores)
         (/ (count scores))
         (.toFixed 2))))
-
-(defn distill-msg [{:keys [content sender_name]}]
-  (if-let [[content nr score] (and content (re-find kun-framed-regex content))]
-    {:type :framed
-     :nr (js/parseInt nr)
-     :score (score->number score)
-     :user (username sender_name)}
-    {:type :not-framed
-     :user (username sender_name)}))
 
 (defcomponent svg-avg-score [score]
   [:svg {:width (str (* 1.2 6) "em") :height "1em"}
