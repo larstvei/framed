@@ -44,4 +44,4 @@
              ")\n")))
 
 (defn -main [& args]
-  (write-clj-file "src/framed/cljs/messages.cljs" (read-data "resources/message_1.json")))
+  (write-clj-file "src/cljs/framed/messages.cljs" (read-data "resources/message_1.json")))
