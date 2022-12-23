@@ -6,7 +6,7 @@
   (:import org.apache.commons.lang3.StringEscapeUtils))
 
 
-(def kun-framed-regex #"Framed #(\d+)\n🎥 ([🟥🟩⬛ ]+)\n")
+(def kun-framed-eller-episode-regex #"(Framed|Episode) #(\d+)\n(🎥|📺) ([🟥🟩⬛ ]+)\n")
 
 (defn username [s]
   (first (s/split s #" ")))
@@ -15,13 +15,13 @@
   (count (re-seq #"🟥" score)))
 
 (defn distill-msg [{:keys [content sender_name]}]
-  (if-let [[content nr score] (and content (re-find kun-framed-regex content))]
-    {:type :framed
+  (if-let [[content type nr sym score]
+           (and content (re-find kun-framed-eller-episode-regex content))]
+    {:type (case type "Framed" :framed "Episode" :episode)
      :nr (Integer/parseInt nr)
      :score (score->number score)
      :user (username sender_name)}
-    {:type :not-framed
-     :user (username sender_name)}))
+    {:type :not-framed :user (username sender_name)}))
 
 ;; This is awful, but not my fault https://stackoverflow.com/questions/50008296/facebook-json-badly-encoded
 (defn bad-decode [s]
