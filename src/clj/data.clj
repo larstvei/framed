@@ -14,13 +14,14 @@
 (defn score->number [score]
   (count (re-seq #"🟥" score)))
 
-(defn distill-msg [{:keys [content sender_name]}]
+(defn distill-msg [{:keys [content sender_name timestamp_ms]}]
   (if-let [[content type nr sym score]
            (and content (re-find kun-framed-eller-episode-regex content))]
     {:type (case type "Framed" :framed "Episode" :episode)
      :nr (Integer/parseInt nr)
      :score (score->number score)
-     :user (username sender_name)}
+     :user (username sender_name)
+     :timestamp_ms timestamp_ms}
     {:type :not-framed :user (username sender_name)}))
 
 ;; This is awful, but not my fault https://stackoverflow.com/questions/50008296/facebook-json-badly-encoded
