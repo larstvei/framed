@@ -51,12 +51,14 @@
     [:svg {:width (em size) :height (em 6)}
      (for [[i avg] (map-indexed vector avgs)]
        [:g
-        [:line {:x1 (em (* (/ i n) size)) :y1 (em 0)
-                :x2 (em (* (/ i n) size)) :y2 (em avg)
-                :stroke color-wrong}]
-        [:line {:x1 (em (* (/ i n) size)) :y1 (em avg)
-                :x2 (em (* (/ i n) size)) :y2 (em 6)
-                :stroke color-correct}]])]))
+        [:line {:x1 (em (* (/ (+ i 0.5) n) size)) :y1 (em 0)
+                :x2 (em (* (/ (+ i 0.5) n) size)) :y2 (em avg)
+                :stroke color-wrong
+                :stroke-width (em (* (/ 1 (+ 2 n)) size))}]
+        [:line {:x1 (em (* (/ (+ i 0.5) n) size)) :y1 (em avg)
+                :x2 (em (* (/ (+ i 0.5) n) size)) :y2 (em 6)
+                :stroke color-correct
+                :stroke-width (em (* (/ 1 (+ 2 n)) size))}]])]))
 
 (defcomponent svg-score [score type]
   (let [tries (max-tries type)
@@ -80,7 +82,9 @@
   (count (filter ikke-framed? posts)))
 
 (defn user-average [_user posts]
-  (.toFixed (last (cumulative-averages posts)) 2))
+  (if-let [avgs (seq (cumulative-averages posts))]
+    (.toFixed (last avgs) 2)
+    "—"))
 
 (defn user-cumulative-average [_user posts]
   [svg-cumulative-average-score (cumulative-averages posts) (:type (first posts))])
@@ -104,10 +108,12 @@
   (table-row users "development" user-cumulative-average))
 
 (defn user-median [_user posts]
-  (let [scores (keep :score posts)
-        n (count scores)
-        median (nth (sort scores) (quot n 2))]
-    (svg-score median (:type (first posts)))))
+  (let [scores (keep :score posts)]
+    (if (empty? scores)
+      "—"
+      (let [n (count scores)
+            median (nth (sort scores) (quot n 2))]
+        (svg-score median (:type (first posts)))))))
 
 (defcomponent median-row [users]
   (table-row users "median" user-median))
@@ -121,21 +127,50 @@
         [svg-score score (:type msg)]
         "—")])])
 
-(defcomponent stats [messages type]
-  (let [users (into (sorted-map) (group-by :user messages))
-        msgs (filter (type-pred type) messages)
-        selected-users (into (sorted-map) (group-by :user msgs))
-        selected-rows (into (sorted-map) (group-by :nr msgs))]
-    [:table
-     [header-row users]
+(defn general-stats [msgs]
+  (let [users (into (sorted-map) (group-by :user msgs))]
+    [[header-row users]
      [framed-row users]
      [episode-row users]
-     [ikke-framed-row users]
-     [cumulative-average-row selected-users]
+     [ikke-framed-row users]]))
+
+(defn performance-stats-rows [msgs users]
+  (let [selected-users (into (reduce #(assoc %1 %2 []) users (keys users))
+                             (group-by :user msgs))
+        selected-rows (into (sorted-map) (group-by :nr msgs))]
+    [[cumulative-average-row selected-users]
      [median-row selected-users]
      [average-row selected-users]
      (for [[nr row] (reverse selected-rows)]
        [score-row nr row selected-users])]))
+
+(defn get-year-and-month [timestamp_ms]
+  (let [date (js/Date. timestamp_ms)
+        options #js{:year "numeric" :month "long" :timeZone "Europe/Oslo"}]
+    (.toLocaleString date "en-US" options)))
+
+(defn add-month [msg]
+  (assoc msg :month (get-year-and-month (:timestamp_ms msg))))
+
+(defn performance-stats [msgs type]
+  (let [msgs (filter (type-pred type) messages)
+        users (into (sorted-map) (group-by :user messages))
+        selected-users (into (sorted-map) (group-by :user msgs))
+        sorted-msgs (sort-by :timestamp_ms > (map add-month msgs))
+        months (remove empty? (partition-by :month sorted-msgs))]
+    (concat
+     [[:tr [:td {:colspan (inc (count users))
+                 :style {:text-align :center}}
+            [:h2 "All time"]]]
+      [cumulative-average-row selected-users]
+      [median-row selected-users]
+      [average-row selected-users]]
+     (mapcat (fn [part]
+               (into [[:tr [:td {:colspan (inc (count users))
+                                 :style {:text-align :center}}
+                            [:h2 (:month (first part))]]]]
+                     (performance-stats-rows part users)))
+             months))))
 
 (defcomponent toggle-button [button-type type]
   [:button.btn {:class (if (= button-type type) :toggled :untoggled)
@@ -153,7 +188,9 @@
    [toggle-button :framed type]
    [toggle-button :episode type]
    [:div {:key type :style {:flex-basis "100%" :height "2em"}}]
-   [stats messages type]])
+   (reduce into [:table]
+           [(general-stats messages)
+            (performance-stats messages type)])])
 
 (defn render [state]
   (dd/render-once [page state] (document.getElementById "app")))
