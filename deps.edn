@@ -1,6 +1,7 @@
 {:paths ["src" "src/cljs"]
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}
         org.clojure/clojurescript {:mvn/version "1.11.60"}
+        org.clojure/data.json {:mvn/version "2.4.0"}
         org.apache.commons/commons-lang3 {:mvn/version "3.12.0"}
         cjohansen/dumdom {:mvn/version "2022.09.28"}}
  :aliases {:run {:main-opts ["-m" "framed.core"]}
