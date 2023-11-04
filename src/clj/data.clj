@@ -6,7 +6,7 @@
   (:import org.apache.commons.lang3.StringEscapeUtils))
 
 
-(def kun-framed-eller-episode-regex #"(Framed|Episode) #(\d+)\n(🎥|📺) ([🟥🟩⬛ ]+)\n")
+(def kun-framed-eller-episode-regex #"(Framed|Episode) #(\d+)\n(🎥|📺) ([🟥🟩⬛ ]+)")
 
 (defn username [s]
   (first (s/split s #" ")))

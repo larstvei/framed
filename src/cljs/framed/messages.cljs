@@ -67,7 +67,11 @@
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 601,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1698928442377}
  {:type :framed,
   :nr 601,
   :score 6,
@@ -96,7 +100,11 @@
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 600,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1698838913737}
  {:type :framed,
   :nr 600,
   :score 6,
@@ -268,7 +276,11 @@
   :score 0,
   :user "Abdi",
   :timestamp_ms 1698623251545}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 598,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1698620555003}
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Einar"}
@@ -306,7 +318,11 @@
  {:type :not-framed, :user "Einar"}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 596,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1698491881688}
  {:type :not-framed, :user "Vegard"}
  {:type :framed,
   :nr 596,
@@ -372,7 +388,11 @@
  {:type :not-framed, :user "Even"}
  {:type :not-framed, :user "Even"}
  {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 595,
+  :score 4,
+  :user "Vegard",
+  :timestamp_ms 1698391863828}
  {:type :not-framed, :user "Vegard"}
  {:type :framed,
   :nr 595,
@@ -585,7 +605,11 @@
   :score 4,
   :user "Even",
   :timestamp_ms 1698124887385}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 592,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1698101010817}
  {:type :framed,
   :nr 592,
   :score 0,
@@ -623,7 +647,11 @@
   :user "Abdi",
   :timestamp_ms 1698050686486}
  {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 591,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1698049684333}
  {:type :episode,
   :nr 60,
   :score 2,
@@ -779,7 +807,11 @@
   :score 1,
   :user "Even",
   :timestamp_ms 1697777602450}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 588,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1697753598119}
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Vegard"}
@@ -834,7 +866,11 @@
   :user "Abdi",
   :timestamp_ms 1697710415934}
  {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 587,
+  :score 4,
+  :user "Vegard",
+  :timestamp_ms 1697705546858}
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Einar"}
  {:type :not-framed, :user "Einar"}
@@ -920,7 +956,11 @@
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 586,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1697623656167}
  {:type :not-framed, :user "Vegard"}
  {:type :framed,
   :nr 586,
@@ -987,7 +1027,11 @@
   :score 5,
   :user "Einar",
   :timestamp_ms 1697517710422}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 585,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1697495402100}
  {:type :not-framed, :user "Even"}
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Abdi"}
@@ -1005,9 +1049,17 @@
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Abdi"}
+ {:type :episode,
+  :nr 59,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1697467985681}
  {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 584,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1697467934136}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Einar"}
  {:type :not-framed, :user "Abdi"}
@@ -1058,7 +1110,11 @@
   :score 6,
   :user "Abdi",
   :timestamp_ms 1697371212131}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 583,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1697359369296}
  {:type :not-framed, :user "Lars"}
  {:type :not-framed, :user "Vegard"}
  {:type :framed,
@@ -1159,7 +1215,11 @@
   :score 6,
   :user "Abdi",
   :timestamp_ms 1697190265671}
- {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 581,
+  :score 5,
+  :user "Vegard",
+  :timestamp_ms 1697184995356}
  {:type :not-framed, :user "Vegard"}
  {:type :framed,
   :nr 581,
