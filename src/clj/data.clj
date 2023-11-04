@@ -1,4 +1,4 @@
-(ns framed.clj.data
+(ns framed.data
   (:require [clojure.data.json :as json]
             [clojure.string :as s]
             [clojure.walk :as walk])
