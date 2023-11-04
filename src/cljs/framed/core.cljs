@@ -16,7 +16,7 @@
 (def color-correct "#42936a")
 (def color-neutral "#67748a")
 
-(def max-tries {:framed 6 :episode 11})
+(def max-tries {:framed 6 :episode 10})
 (def type-pred {:framed framed? :episode episode?})
 
 (defonce state (atom {:type :framed}))
