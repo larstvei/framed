@@ -1,7 +1,3189 @@
 (ns framed.messages)
 
 (def messages 
-[{:type :not-framed, :user "Abdi"}
+[{:type :framed,
+  :nr 653,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1703372544873}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 652,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1703326604702}
+ {:type :framed,
+  :nr 652,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1703314459205}
+ {:type :framed,
+  :nr 652,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1703292874472}
+ {:type :framed,
+  :nr 652,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1703290994248}
+ {:type :framed,
+  :nr 652,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1703287446598}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 651,
+  :score 3,
+  :user "Even",
+  :timestamp_ms 1703254442042}
+ {:type :framed,
+  :nr 651,
+  :score 3,
+  :user "Abdi",
+  :timestamp_ms 1703252482996}
+ {:type :framed,
+  :nr 651,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1703235679210}
+ {:type :framed,
+  :nr 651,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1703201215585}
+ {:type :framed,
+  :nr 651,
+  :score 4,
+  :user "Einar",
+  :timestamp_ms 1703201060951}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 650,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1703174567518}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 650,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1703161204304}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 650,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1703153685492}
+ {:type :framed,
+  :nr 650,
+  :score 3,
+  :user "Abdi",
+  :timestamp_ms 1703153316312}
+ {:type :framed,
+  :nr 650,
+  :score 3,
+  :user "Einar",
+  :timestamp_ms 1703141063827}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 649,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1703055058998}
+ {:type :framed,
+  :nr 649,
+  :score 0,
+  :user "Einar",
+  :timestamp_ms 1703050636219}
+ {:type :framed,
+  :nr 649,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1703027248687}
+ {:type :framed,
+  :nr 649,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1703027174302}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 648,
+  :score 1,
+  :user "Lars",
+  :timestamp_ms 1703019481533}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 648,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1702990405608}
+ {:type :framed,
+  :nr 648,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1702971700534}
+ {:type :framed,
+  :nr 648,
+  :score 1,
+  :user "Einar",
+  :timestamp_ms 1702940730542}
+ {:type :framed,
+  :nr 648,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1702940621931}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :episode,
+  :nr 68,
+  :score 4,
+  :user "Vegard",
+  :timestamp_ms 1702906986703}
+ {:type :framed,
+  :nr 647,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1702906982242}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 647,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1702891009233}
+ {:type :episode,
+  :nr 68,
+  :score 2,
+  :user "Abdi",
+  :timestamp_ms 1702890999611}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :episode,
+  :nr 68,
+  :score 8,
+  :user "Lars",
+  :timestamp_ms 1702889336123}
+ {:type :framed,
+  :nr 647,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1702888884964}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 647,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1702880224443}
+ {:type :episode,
+  :nr 68,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1702880201737}
+ {:type :not-framed, :user "Even"}
+ {:type :episode,
+  :nr 68,
+  :score 2,
+  :user "Einar",
+  :timestamp_ms 1702879039256}
+ {:type :framed,
+  :nr 647,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1702878943977}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 646,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1702797922897}
+ {:type :framed,
+  :nr 646,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1702797693531}
+ {:type :framed,
+  :nr 646,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1702771312476}
+ {:type :framed,
+  :nr 646,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1702769392082}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 645,
+  :score 4,
+  :user "Abdi",
+  :timestamp_ms 1702727122200}
+ {:type :framed,
+  :nr 645,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1702720755728}
+ {:type :framed,
+  :nr 645,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1702714279932}
+ {:type :framed,
+  :nr 645,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1702682602796}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 644,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1702647256494}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 644,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1702629119007}
+ {:type :framed,
+  :nr 644,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1702621344842}
+ {:type :framed,
+  :nr 644,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1702621312874}
+ {:type :framed,
+  :nr 644,
+  :score 4,
+  :user "Einar",
+  :timestamp_ms 1702619457211}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 643,
+  :score 5,
+  :user "Vegard",
+  :timestamp_ms 1702555488700}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 643,
+  :score 5,
+  :user "Abdi",
+  :timestamp_ms 1702544418369}
+ {:type :framed,
+  :nr 643,
+  :score 5,
+  :user "Even",
+  :timestamp_ms 1702535526175}
+ {:type :framed,
+  :nr 643,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1702533780230}
+ {:type :framed,
+  :nr 643,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1702532710408}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 642,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1702463532810}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 642,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1702456575790}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 642,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1702446178235}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 642,
+  :score 0,
+  :user "Einar",
+  :timestamp_ms 1702443402060}
+ {:type :framed,
+  :nr 642,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1702425718900}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 641,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1702371852563}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :episode,
+  :nr 67,
+  :score 7,
+  :user "Lars",
+  :timestamp_ms 1702368615745}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 641,
+  :score 1,
+  :user "Lars",
+  :timestamp_ms 1702368581485}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 641,
+  :score 5,
+  :user "Abdi",
+  :timestamp_ms 1702368496535}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 641,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1702367627120}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 641,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1702357180495}
+ {:type :episode,
+  :nr 67,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1702332770638}
+ {:type :framed,
+  :nr 640,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1702332748533}
+ {:type :framed,
+  :nr 640,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1702307279969}
+ {:type :framed,
+  :nr 640,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1702281307484}
+ {:type :episode,
+  :nr 67,
+  :score 4,
+  :user "Abdi",
+  :timestamp_ms 1702281294964}
+ {:type :episode,
+  :nr 67,
+  :score 3,
+  :user "Even",
+  :timestamp_ms 1702280889466}
+ {:type :framed,
+  :nr 640,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1702280800378}
+ {:type :episode,
+  :nr 67,
+  :score 1,
+  :user "Einar",
+  :timestamp_ms 1702272242241}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 640,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1702272177318}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 639,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1702196551952}
+ {:type :framed,
+  :nr 639,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1702195465906}
+ {:type :framed,
+  :nr 639,
+  :score 5,
+  :user "Abdi",
+  :timestamp_ms 1702165479933}
+ {:type :framed,
+  :nr 639,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1702164239377}
+ {:type :framed,
+  :nr 639,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1702163128238}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 638,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1702147741877}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 638,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1702147136845}
+ {:type :framed,
+  :nr 638,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1702146956896}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 638,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1702122368149}
+ {:type :framed,
+  :nr 638,
+  :score 1,
+  :user "Einar",
+  :timestamp_ms 1702106133111}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 637,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1702027874182}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Lars"}
+ {:type :framed,
+  :nr 637,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1702026923931}
+ {:type :framed,
+  :nr 637,
+  :score 2,
+  :user "Abdi",
+  :timestamp_ms 1702024569818}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 637,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1702020872876}
+ {:type :framed,
+  :nr 637,
+  :score 1,
+  :user "Einar",
+  :timestamp_ms 1702013722141}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 636,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701937472921}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 636,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1701937308277}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 636,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1701936625602}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 636,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1701932245010}
+ {:type :framed,
+  :nr 636,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1701928337694}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 635,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1701893190916}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 635,
+  :score 1,
+  :user "Lars",
+  :timestamp_ms 1701856761729}
+ {:type :framed,
+  :nr 635,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1701856667995}
+ {:type :framed,
+  :nr 635,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1701856573531}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 635,
+  :score 3,
+  :user "Einar",
+  :timestamp_ms 1701842224494}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 634,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1701770203319}
+ {:type :framed,
+  :nr 634,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1701769596309}
+ {:type :framed,
+  :nr 634,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701763773750}
+ {:type :framed,
+  :nr 634,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1701756981625}
+ {:type :framed,
+  :nr 634,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1701751290032}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :episode,
+  :nr 66,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1701715193969}
+ {:type :not-framed, :user "Abdi"}
+ {:type :episode,
+  :nr 66,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1701714569499}
+ {:type :framed,
+  :nr 633,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1701714566047}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :episode,
+  :nr 66,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1701699109408}
+ {:type :framed,
+  :nr 633,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1701699096341}
+ {:type :episode,
+  :nr 66,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701677506379}
+ {:type :framed,
+  :nr 633,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701677332489}
+ {:type :framed,
+  :nr 633,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1701676396017}
+ {:type :episode,
+  :nr 66,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1701668065461}
+ {:type :framed,
+  :nr 633,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1701667942596}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 632,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1701614914650}
+ {:type :framed,
+  :nr 632,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1701603362154}
+ {:type :framed,
+  :nr 632,
+  :score 2,
+  :user "Lars",
+  :timestamp_ms 1701590887817}
+ {:type :framed,
+  :nr 632,
+  :score 2,
+  :user "Einar",
+  :timestamp_ms 1701589425476}
+ {:type :framed,
+  :nr 632,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1701589250657}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 631,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1701511868242}
+ {:type :framed,
+  :nr 631,
+  :score 2,
+  :user "Einar",
+  :timestamp_ms 1701502443289}
+ {:type :framed,
+  :nr 631,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1701501661503}
+ {:type :framed,
+  :nr 631,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701472503272}
+ {:type :not-framed, :user "Lars"}
+ {:type :framed,
+  :nr 630,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701472333823}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 631,
+  :score 2,
+  :user "Abdi",
+  :timestamp_ms 1701472008947}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 630,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1701417095800}
+ {:type :framed,
+  :nr 630,
+  :score 1,
+  :user "Einar",
+  :timestamp_ms 1701405097707}
+ {:type :framed,
+  :nr 630,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1701387357498}
+ {:type :framed,
+  :nr 630,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1701385473161}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 629,
+  :score 4,
+  :user "Abdi",
+  :timestamp_ms 1701334905443}
+ {:type :framed,
+  :nr 629,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701330718907}
+ {:type :framed,
+  :nr 629,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1701327447925}
+ {:type :framed,
+  :nr 629,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1701319544192}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 628,
+  :score 5,
+  :user "Vegard",
+  :timestamp_ms 1701273696700}
+ {:type :framed,
+  :nr 628,
+  :score 5,
+  :user "Abdi",
+  :timestamp_ms 1701256837379}
+ {:type :framed,
+  :nr 628,
+  :score 5,
+  :user "Even",
+  :timestamp_ms 1701251313680}
+ {:type :framed,
+  :nr 628,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701240161564}
+ {:type :framed,
+  :nr 628,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1701232555732}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 627,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1701164976792}
+ {:type :framed,
+  :nr 627,
+  :score 1,
+  :user "Lars",
+  :timestamp_ms 1701164104912}
+ {:type :framed,
+  :nr 627,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1701159737930}
+ {:type :framed,
+  :nr 627,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1701153677318}
+ {:type :framed,
+  :nr 627,
+  :score 1,
+  :user "Einar",
+  :timestamp_ms 1701147579659}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 626,
+  :score 5,
+  :user "Vegard",
+  :timestamp_ms 1701073895140}
+ {:type :episode,
+  :nr 65,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1701073891737}
+ {:type :episode,
+  :nr 65,
+  :score 5,
+  :user "Abdi",
+  :timestamp_ms 1701072991206}
+ {:type :framed,
+  :nr 626,
+  :score 3,
+  :user "Abdi",
+  :timestamp_ms 1701072981835}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 626,
+  :score 3,
+  :user "Even",
+  :timestamp_ms 1701070111990}
+ {:type :episode,
+  :nr 65,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1701066759680}
+ {:type :episode,
+  :nr 65,
+  :score 0,
+  :user "Lars",
+  :timestamp_ms 1701066361530}
+ {:type :framed,
+  :nr 626,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1701066344539}
+ {:type :episode,
+  :nr 65,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1701063410200}
+ {:type :framed,
+  :nr 626,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1701063295512}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 625,
+  :score 4,
+  :user "Even",
+  :timestamp_ms 1700986536807}
+ {:type :framed,
+  :nr 625,
+  :score 0,
+  :user "Einar",
+  :timestamp_ms 1700978250397}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 625,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1700962080127}
+ {:type :framed,
+  :nr 625,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1700954419845}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 624,
+  :score 2,
+  :user "Einar",
+  :timestamp_ms 1700897843307}
+ {:type :framed,
+  :nr 624,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1700896838898}
+ {:type :framed,
+  :nr 624,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1700878314884}
+ {:type :framed,
+  :nr 624,
+  :score 1,
+  :user "Lars",
+  :timestamp_ms 1700874006650}
+ {:type :not-framed, :user "Lars"}
+ {:type :framed,
+  :nr 624,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1700868374272}
+ {:type :framed,
+  :nr 623,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1700819185696}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 623,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1700813732744}
+ {:type :framed,
+  :nr 623,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1700812551715}
+ {:type :framed,
+  :nr 623,
+  :score 0,
+  :user "Einar",
+  :timestamp_ms 1700807829575}
+ {:type :framed,
+  :nr 623,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1700780821923}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 622,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1700728769943}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 622,
+  :score 3,
+  :user "Even",
+  :timestamp_ms 1700727373312}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 622,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1700726353548}
+ {:type :framed,
+  :nr 622,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1700725691222}
+ {:type :framed,
+  :nr 622,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1700716563979}
+ {:type :framed,
+  :nr 621,
+  :score 0,
+  :user "Einar",
+  :timestamp_ms 1700636579283}
+ {:type :framed,
+  :nr 621,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1700634399815}
+ {:type :framed,
+  :nr 621,
+  :score 0,
+  :user "Lars",
+  :timestamp_ms 1700609770006}
+ {:type :framed,
+  :nr 621,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1700607788072}
+ {:type :framed,
+  :nr 621,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1700607778041}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 620,
+  :score 1,
+  :user "Vegard",
+  :timestamp_ms 1700553447113}
+ {:type :framed,
+  :nr 620,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1700548413148}
+ {:type :framed,
+  :nr 620,
+  :score 4,
+  :user "Einar",
+  :timestamp_ms 1700542749858}
+ {:type :framed,
+  :nr 620,
+  :score 3,
+  :user "Lars",
+  :timestamp_ms 1700525408651}
+ {:type :framed,
+  :nr 620,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1700525234804}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :episode,
+  :nr 64,
+  :score 2,
+  :user "Abdi",
+  :timestamp_ms 1700490022166}
+ {:type :framed,
+  :nr 619,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1700490015630}
+ {:type :episode,
+  :nr 64,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1700476380269}
+ {:type :framed,
+  :nr 619,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1700476376827}
+ {:type :episode,
+  :nr 64,
+  :score 5,
+  :user "Even",
+  :timestamp_ms 1700471913081}
+ {:type :framed,
+  :nr 619,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1700471859627}
+ {:type :episode,
+  :nr 64,
+  :score 2,
+  :user "Lars",
+  :timestamp_ms 1700461593964}
+ {:type :framed,
+  :nr 619,
+  :score 3,
+  :user "Lars",
+  :timestamp_ms 1700461475164}
+ {:type :episode,
+  :nr 64,
+  :score 10,
+  :user "Einar",
+  :timestamp_ms 1700459720451}
+ {:type :framed,
+  :nr 619,
+  :score 3,
+  :user "Einar",
+  :timestamp_ms 1700459571290}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 618,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1700425430805}
+ {:type :framed,
+  :nr 618,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1700412903261}
+ {:type :framed,
+  :nr 618,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1700389715898}
+ {:type :framed,
+  :nr 618,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1700379338508}
+ {:type :framed,
+  :nr 618,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1700350508187}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 617,
+  :score 3,
+  :user "Abdi",
+  :timestamp_ms 1700311545005}
+ {:type :framed,
+  :nr 617,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1700311493252}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 617,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1700304958780}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 617,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1700291384265}
+ {:type :framed,
+  :nr 617,
+  :score 4,
+  :user "Even",
+  :timestamp_ms 1700265591734}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 616,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1700228514842}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 616,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1700228228165}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 616,
+  :score 1,
+  :user "Einar",
+  :timestamp_ms 1700200121258}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 616,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1700175712636}
+ {:type :framed,
+  :nr 616,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1700175694578}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 615,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1700128265454}
+ {:type :framed,
+  :nr 615,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1700128093996}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 615,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1700121569277}
+ {:type :framed,
+  :nr 615,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1700115064029}
+ {:type :framed,
+  :nr 615,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1700114557004}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 614,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1700043664016}
+ {:type :framed,
+  :nr 614,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1700038049741}
+ {:type :framed,
+  :nr 614,
+  :score 3,
+  :user "Einar",
+  :timestamp_ms 1700025904034}
+ {:type :framed,
+  :nr 614,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1700025860971}
+ {:type :framed,
+  :nr 614,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1700024715966}
+ {:type :framed,
+  :nr 613,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1699992183966}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 613,
+  :score 3,
+  :user "Abdi",
+  :timestamp_ms 1699963037239}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Lars"}
+ {:type :framed,
+  :nr 613,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1699947508914}
+ {:type :framed,
+  :nr 613,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1699943868824}
+ {:type :framed,
+  :nr 613,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1699939651745}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :episode,
+  :nr 63,
+  :score 10,
+  :user "Vegard",
+  :timestamp_ms 1699882574595}
+ {:type :framed,
+  :nr 612,
+  :score 5,
+  :user "Vegard",
+  :timestamp_ms 1699882564081}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :episode,
+  :nr 63,
+  :score 2,
+  :user "Abdi",
+  :timestamp_ms 1699882233563}
+ {:type :framed,
+  :nr 612,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1699882229515}
+ {:type :episode,
+  :nr 63,
+  :score 10,
+  :user "Even",
+  :timestamp_ms 1699863063490}
+ {:type :framed,
+  :nr 612,
+  :score 4,
+  :user "Even",
+  :timestamp_ms 1699862022241}
+ {:type :episode,
+  :nr 63,
+  :score 10,
+  :user "Lars",
+  :timestamp_ms 1699858693530}
+ {:type :framed,
+  :nr 612,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1699858373713}
+ {:type :not-framed, :user "Einar"}
+ {:type :episode,
+  :nr 63,
+  :score 10,
+  :user "Einar",
+  :timestamp_ms 1699853876065}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 612,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1699853818990}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 611,
+  :score 2,
+  :user "Abdi",
+  :timestamp_ms 1699793397481}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 611,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1699788806895}
+ {:type :framed,
+  :nr 611,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1699773645982}
+ {:type :framed,
+  :nr 611,
+  :score 2,
+  :user "Lars",
+  :timestamp_ms 1699747133397}
+ {:type :framed,
+  :nr 611,
+  :score 2,
+  :user "Einar",
+  :timestamp_ms 1699747048816}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 610,
+  :score 2,
+  :user "Lars",
+  :timestamp_ms 1699718770989}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 610,
+  :score 0,
+  :user "Abdi",
+  :timestamp_ms 1699718674407}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 610,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1699686352637}
+ {:type :framed,
+  :nr 610,
+  :score 0,
+  :user "Einar",
+  :timestamp_ms 1699658112619}
+ {:type :framed,
+  :nr 610,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1699657666108}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 609,
+  :score 2,
+  :user "Vegard",
+  :timestamp_ms 1699610707382}
+ {:type :framed,
+  :nr 609,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1699609654472}
+ {:type :framed,
+  :nr 609,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1699603114178}
+ {:type :framed,
+  :nr 609,
+  :score 2,
+  :user "Lars",
+  :timestamp_ms 1699602026892}
+ {:type :framed,
+  :nr 609,
+  :score 5,
+  :user "Einar",
+  :timestamp_ms 1699593487371}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 608,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1699527996434}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 608,
+  :score 3,
+  :user "Abdi",
+  :timestamp_ms 1699524026988}
+ {:type :framed,
+  :nr 608,
+  :score 1,
+  :user "Even",
+  :timestamp_ms 1699523348446}
+ {:type :framed,
+  :nr 608,
+  :score 4,
+  :user "Vegard",
+  :timestamp_ms 1699522164633}
+ {:type :framed,
+  :nr 608,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1699509715074}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 607,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1699441213763}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 607,
+  :score 6,
+  :user "Abdi",
+  :timestamp_ms 1699438455115}
+ {:type :framed,
+  :nr 607,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1699428781616}
+ {:type :framed,
+  :nr 607,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1699422959096}
+ {:type :framed,
+  :nr 607,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1699398556885}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 606,
+  :score 3,
+  :user "Abdi",
+  :timestamp_ms 1699347584585}
+ {:type :framed,
+  :nr 606,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1699347487708}
+ {:type :framed,
+  :nr 606,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1699344307735}
+ {:type :framed,
+  :nr 606,
+  :score 3,
+  :user "Even",
+  :timestamp_ms 1699337567307}
+ {:type :framed,
+  :nr 606,
+  :score 3,
+  :user "Einar",
+  :timestamp_ms 1699334208746}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :episode,
+  :nr 62,
+  :score 10,
+  :user "Lars",
+  :timestamp_ms 1699274930802}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 605,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1699270155396}
+ {:type :episode,
+  :nr 62,
+  :score 2,
+  :user "Abdi",
+  :timestamp_ms 1699270141585}
+ {:type :episode,
+  :nr 62,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1699269978765}
+ {:type :framed,
+  :nr 605,
+  :score 6,
+  :user "Vegard",
+  :timestamp_ms 1699269975486}
+ {:type :framed,
+  :nr 605,
+  :score 6,
+  :user "Lars",
+  :timestamp_ms 1699252405020}
+ {:type :episode,
+  :nr 62,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1699252062041}
+ {:type :framed,
+  :nr 605,
+  :score 6,
+  :user "Even",
+  :timestamp_ms 1699252033733}
+ {:type :episode,
+  :nr 62,
+  :score 6,
+  :user "Einar",
+  :timestamp_ms 1699247809731}
+ {:type :framed,
+  :nr 605,
+  :score 4,
+  :user "Einar",
+  :timestamp_ms 1699246753089}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 604,
+  :score 0,
+  :user "Vegard",
+  :timestamp_ms 1699179510526}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 604,
+  :score 2,
+  :user "Lars",
+  :timestamp_ms 1699174089721}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :framed,
+  :nr 604,
+  :score 0,
+  :user "Einar",
+  :timestamp_ms 1699166567808}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 604,
+  :score 0,
+  :user "Even",
+  :timestamp_ms 1699139288310}
+ {:type :framed,
+  :nr 604,
+  :score 1,
+  :user "Abdi",
+  :timestamp_ms 1699139241595}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Lars"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :framed,
+  :nr 603,
+  :score 3,
+  :user "Vegard",
+  :timestamp_ms 1699093881426}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 603,
+  :score 1,
+  :user "Einar",
+  :timestamp_ms 1699081189846}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :framed,
+  :nr 603,
+  :score 2,
+  :user "Abdi",
+  :timestamp_ms 1699053009018}
+ {:type :framed,
+  :nr 603,
+  :score 3,
+  :user "Lars",
+  :timestamp_ms 1699052671065}
+ {:type :not-framed, :user "Even"}
+ {:type :framed,
+  :nr 603,
+  :score 2,
+  :user "Even",
+  :timestamp_ms 1699052607890}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Vegard"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Einar"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
+ {:type :not-framed, :user "Even"}
+ {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Vegard"}
  {:type :not-framed, :user "Lars"}
@@ -13814,3343 +16996,5 @@
  {:type :not-framed, :user "Einar"}
  {:type :not-framed, :user "Abdi"}
  {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 345,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1676800828010}
- {:type :framed,
-  :nr 345,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1676798581498}
- {:type :framed,
-  :nr 345,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1676792607189}
- {:type :framed,
-  :nr 345,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1676789628541}
- {:type :framed,
-  :nr 345,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1676789081493}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 344,
-  :score 4,
-  :user "Abdi",
-  :timestamp_ms 1676707482587}
- {:type :framed,
-  :nr 344,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1676680605167}
- {:type :framed,
-  :nr 344,
-  :score 5,
-  :user "Even",
-  :timestamp_ms 1676679239991}
- {:type :framed,
-  :nr 344,
-  :score 3,
-  :user "Lars",
-  :timestamp_ms 1676676567228}
- {:type :framed,
-  :nr 344,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1676674934647}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 343,
-  :score 4,
-  :user "Even",
-  :timestamp_ms 1676632351399}
- {:type :framed,
-  :nr 343,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1676631653115}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 343,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1676617747875}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 342,
-  :score 4,
-  :user "Lars",
-  :timestamp_ms 1676617378827}
- {:type :framed,
-  :nr 343,
-  :score 3,
-  :user "Abdi",
-  :timestamp_ms 1676614732249}
- {:type :framed,
-  :nr 343,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1676611680540}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 342,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1676535630351}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 342,
-  :score 3,
-  :user "Abdi",
-  :timestamp_ms 1676534925753}
- {:type :framed,
-  :nr 342,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1676531178742}
- {:type :framed,
-  :nr 342,
-  :score 3,
-  :user "Even",
-  :timestamp_ms 1676502968807}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 341,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1676442356208}
- {:type :framed,
-  :nr 341,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1676442187123}
- {:type :framed,
-  :nr 341,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1676439357654}
- {:type :framed,
-  :nr 341,
-  :score 0,
-  :user "Lars",
-  :timestamp_ms 1676415960024}
- {:type :framed,
-  :nr 341,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1676415925284}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 340,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1676362647137}
- {:type :framed,
-  :nr 340,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1676357186712}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 340,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1676355624714}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 340,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1676355106367}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 340,
-  :score 6,
-  :user "Einar",
-  :timestamp_ms 1676353522967}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :episode,
-  :nr 24,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1676278045458}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 339,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1676276196812}
- {:type :episode,
-  :nr 24,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1676274403218}
- {:type :episode,
-  :nr 24,
-  :score 2,
-  :user "Lars",
-  :timestamp_ms 1676274187772}
- {:type :framed,
-  :nr 339,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1676273785934}
- {:type :framed,
-  :nr 339,
-  :score 6,
-  :user "Abdi",
-  :timestamp_ms 1676273551795}
- {:type :episode,
-  :nr 24,
-  :score 3,
-  :user "Even",
-  :timestamp_ms 1676271439301}
- {:type :framed,
-  :nr 339,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1676270135552}
- {:type :episode,
-  :nr 24,
-  :score 5,
-  :user "Einar",
-  :timestamp_ms 1676265313632}
- {:type :framed,
-  :nr 339,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1676264915504}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 338,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1676235691350}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 338,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1676191452705}
- {:type :framed,
-  :nr 338,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1676187290056}
- {:type :framed,
-  :nr 338,
-  :score 5,
-  :user "Einar",
-  :timestamp_ms 1676184325557}
- {:type :framed,
-  :nr 338,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1676159166733}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 337,
-  :score 6,
-  :user "Abdi",
-  :timestamp_ms 1676085752528}
- {:type :framed,
-  :nr 337,
-  :score 6,
-  :user "Vegard",
-  :timestamp_ms 1676072498684}
- {:type :framed,
-  :nr 337,
-  :score 5,
-  :user "Even",
-  :timestamp_ms 1676070986888}
- {:type :framed,
-  :nr 337,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1676070222228}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 337,
-  :score 6,
-  :user "Einar",
-  :timestamp_ms 1676070120163}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 336,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1676017750879}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 336,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1676013858961}
- {:type :framed,
-  :nr 336,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1676012161197}
- {:type :framed,
-  :nr 336,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1676010303020}
- {:type :framed,
-  :nr 336,
-  :score 0,
-  :user "Einar",
-  :timestamp_ms 1676007295934}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 335,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1675954198173}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 335,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1675939075839}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 335,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1675935390831}
- {:type :framed,
-  :nr 335,
-  :score 0,
-  :user "Lars",
-  :timestamp_ms 1675934220381}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 335,
-  :score 0,
-  :user "Einar",
-  :timestamp_ms 1675921136032}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 334,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1675843082034}
- {:type :framed,
-  :nr 334,
-  :score 6,
-  :user "Even",
-  :timestamp_ms 1675842446047}
- {:type :framed,
-  :nr 334,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1675840932398}
- {:type :framed,
-  :nr 334,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1675840581312}
- {:type :framed,
-  :nr 334,
-  :score 6,
-  :user "Einar",
-  :timestamp_ms 1675832062548}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 333,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1675766399700}
- {:type :framed,
-  :nr 333,
-  :score 2,
-  :user "Lars",
-  :timestamp_ms 1675764144694}
- {:type :framed,
-  :nr 333,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1675763223393}
- {:type :framed,
-  :nr 333,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1675751442390}
- {:type :framed,
-  :nr 333,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1675746263405}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :episode,
-  :nr 23,
-  :score 7,
-  :user "Einar",
-  :timestamp_ms 1675685401059}
- {:type :episode,
-  :nr 23,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1675683604044}
- {:type :episode,
-  :nr 23,
-  :score 8,
-  :user "Lars",
-  :timestamp_ms 1675681507106}
- {:type :episode,
-  :nr 23,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1675676722030}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :episode,
-  :nr 23,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1675674342206}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 332,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1675674101565}
- {:type :framed,
-  :nr 332,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1675673870104}
- {:type :framed,
-  :nr 332,
-  :score 5,
-  :user "Einar",
-  :timestamp_ms 1675661630137}
- {:type :framed,
-  :nr 332,
-  :score 4,
-  :user "Lars",
-  :timestamp_ms 1675641806397}
- {:type :framed,
-  :nr 332,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1675640467785}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 331,
-  :score 5,
-  :user "Lars",
-  :timestamp_ms 1675587808636}
- {:type :framed,
-  :nr 331,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1675579264229}
- {:type :framed,
-  :nr 331,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1675578722172}
- {:type :framed,
-  :nr 331,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1675556801958}
- {:type :framed,
-  :nr 331,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1675556716399}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 330,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1675499670983}
- {:type :framed,
-  :nr 330,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1675466682674}
- {:type :framed,
-  :nr 330,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1675465991613}
- {:type :framed,
-  :nr 330,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1675465693144}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 330,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1675465484474}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 329,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1675413696556}
- {:type :framed,
-  :nr 329,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1675407365386}
- {:type :framed,
-  :nr 329,
-  :score 5,
-  :user "Lars",
-  :timestamp_ms 1675404443016}
- {:type :framed,
-  :nr 329,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1675402391650}
- {:type :framed,
-  :nr 329,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1675381815679}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 328,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1675339219436}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 328,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1675332270213}
- {:type :framed,
-  :nr 328,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1675332122237}
- {:type :framed,
-  :nr 328,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1675331861883}
- {:type :framed,
-  :nr 328,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1675316425125}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 327,
-  :score 4,
-  :user "Abdi",
-  :timestamp_ms 1675250552298}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 327,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1675232934455}
- {:type :framed,
-  :nr 327,
-  :score 6,
-  :user "Einar",
-  :timestamp_ms 1675227204082}
- {:type :framed,
-  :nr 327,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1675207300569}
- {:type :framed,
-  :nr 327,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1675206989649}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 326,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1675157137368}
- {:type :framed,
-  :nr 326,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1675156927474}
- {:type :framed,
-  :nr 326,
-  :score 2,
-  :user "Lars",
-  :timestamp_ms 1675154346129}
- {:type :framed,
-  :nr 326,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1675154275700}
- {:type :framed,
-  :nr 326,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1675143263365}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :episode,
-  :nr 22,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1675060015858}
- {:type :framed,
-  :nr 325,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1675058660230}
- {:type :framed,
-  :nr 325,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1675055377044}
- {:type :episode,
-  :nr 22,
-  :score 10,
-  :user "Abdi",
-  :timestamp_ms 1675055366315}
- {:type :episode,
-  :nr 22,
-  :score 10,
-  :user "Einar",
-  :timestamp_ms 1675054796960}
- {:type :framed,
-  :nr 325,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1675054585684}
- {:type :episode,
-  :nr 22,
-  :score 10,
-  :user "Lars",
-  :timestamp_ms 1675036729591}
- {:type :episode,
-  :nr 22,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1675035942263}
- {:type :framed,
-  :nr 325,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1675034484377}
- {:type :framed,
-  :nr 325,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1675033703782}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 324,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1675006109711}
- {:type :framed,
-  :nr 324,
-  :score 3,
-  :user "Lars",
-  :timestamp_ms 1674987256159}
- {:type :framed,
-  :nr 324,
-  :score 3,
-  :user "Even",
-  :timestamp_ms 1674976991502}
- {:type :framed,
-  :nr 324,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1674955922047}
- {:type :framed,
-  :nr 324,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1674952359352}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 323,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1674889879312}
- {:type :framed,
-  :nr 323,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1674885625705}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 323,
-  :score 0,
-  :user "Lars",
-  :timestamp_ms 1674864331560}
- {:type :framed,
-  :nr 323,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1674862242915}
- {:type :framed,
-  :nr 323,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1674861616320}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 322,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1674813690962}
- {:type :framed,
-  :nr 322,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1674803504377}
- {:type :framed,
-  :nr 322,
-  :score 6,
-  :user "Einar",
-  :timestamp_ms 1674797356071}
- {:type :framed,
-  :nr 322,
-  :score 3,
-  :user "Lars",
-  :timestamp_ms 1674779610307}
- {:type :framed,
-  :nr 322,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1674775699918}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 321,
-  :score 0,
-  :user "Einar",
-  :timestamp_ms 1674709020949}
- {:type :framed,
-  :nr 321,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1674689752032}
- {:type :framed,
-  :nr 321,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1674689421067}
- {:type :framed,
-  :nr 321,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1674688891736}
- {:type :framed,
-  :nr 321,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1674688462815}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 320,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1674643698141}
- {:type :framed,
-  :nr 320,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1674628238951}
- {:type :framed,
-  :nr 320,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1674625219629}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 320,
-  :score 0,
-  :user "Lars",
-  :timestamp_ms 1674601379195}
- {:type :framed,
-  :nr 320,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1674601287138}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 319,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1674591482490}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 319,
-  :score 5,
-  :user "Vegard",
-  :timestamp_ms 1674556193119}
- {:type :framed,
-  :nr 319,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1674556067278}
- {:type :framed,
-  :nr 319,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1674546639103}
- {:type :framed,
-  :nr 319,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1674536189054}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :episode,
-  :nr 21,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1674479902156}
- {:type :framed,
-  :nr 318,
-  :score 6,
-  :user "Abdi",
-  :timestamp_ms 1674479900478}
- {:type :framed,
-  :nr 318,
-  :score 5,
-  :user "Even",
-  :timestamp_ms 1674475120197}
- {:type :episode,
-  :nr 21,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1674471972843}
- {:type :framed,
-  :nr 318,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1674471971440}
- {:type :episode,
-  :nr 21,
-  :score 0,
-  :user "Lars",
-  :timestamp_ms 1674471869770}
- {:type :framed,
-  :nr 318,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1674471849525}
- {:type :episode,
-  :nr 21,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1674455141773}
- {:type :framed,
-  :nr 318,
-  :score 6,
-  :user "Einar",
-  :timestamp_ms 1674450344310}
- {:type :episode,
-  :nr 21,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1674450319249}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 317,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1674347226135}
- {:type :framed,
-  :nr 317,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1674344369625}
- {:type :framed,
-  :nr 317,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1674342205683}
- {:type :framed,
-  :nr 317,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1674342081874}
- {:type :framed,
-  :nr 317,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1674342057998}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 316,
-  :score 4,
-  :user "Vegard",
-  :timestamp_ms 1674292969529}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 316,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1674285127981}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 316,
-  :score 6,
-  :user "Abdi",
-  :timestamp_ms 1674261040454}
- {:type :framed,
-  :nr 316,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1674256657283}
- {:type :framed,
-  :nr 316,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1674256117687}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 315,
-  :score 0,
-  :user "Lars",
-  :timestamp_ms 1674198582877}
- {:type :framed,
-  :nr 315,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1674197167962}
- {:type :framed,
-  :nr 315,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1674191885323}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 315,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1674177663847}
- {:type :framed,
-  :nr 315,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1674169835043}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 314,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1674115207185}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 314,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1674113281703}
- {:type :framed,
-  :nr 314,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1674106746499}
- {:type :framed,
-  :nr 314,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1674104000458}
- {:type :framed,
-  :nr 314,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1674083148635}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 313,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1674023503275}
- {:type :framed,
-  :nr 313,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1674022118275}
- {:type :framed,
-  :nr 313,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1674018282041}
- {:type :framed,
-  :nr 313,
-  :score 4,
-  :user "Vegard",
-  :timestamp_ms 1673998220980}
- {:type :framed,
-  :nr 313,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1673996543135}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 312,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1673961314996}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 312,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1673960221127}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 312,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1673947689786}
- {:type :framed,
-  :nr 312,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1673934858400}
- {:type :framed,
-  :nr 312,
-  :score 5,
-  :user "Einar",
-  :timestamp_ms 1673931784490}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 311,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1673864972393}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :episode,
-  :nr 20,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1673856743817}
- {:type :framed,
-  :nr 311,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1673856739132}
- {:type :episode,
-  :nr 20,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1673852090059}
- {:type :episode,
-  :nr 20,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1673846188635}
- {:type :framed,
-  :nr 311,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1673846120796}
- {:type :episode,
-  :nr 20,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1673824318608}
- {:type :episode,
-  :nr 20,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1673824244980}
- {:type :framed,
-  :nr 311,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1673823839141}
- {:type :framed,
-  :nr 311,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1673823666556}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 310,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1673773161037}
- {:type :framed,
-  :nr 310,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1673745468547}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 310,
-  :score 5,
-  :user "Lars",
-  :timestamp_ms 1673738055779}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 310,
-  :score 5,
-  :user "Even",
-  :timestamp_ms 1673738016313}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 310,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1673737366305}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 309,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1673697162691}
- {:type :framed,
-  :nr 309,
-  :score 2,
-  :user "Lars",
-  :timestamp_ms 1673688811972}
- {:type :framed,
-  :nr 309,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1673684170743}
- {:type :framed,
-  :nr 309,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1673681200871}
- {:type :framed,
-  :nr 309,
-  :score 0,
-  :user "Einar",
-  :timestamp_ms 1673678314294}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 308,
-  :score 3,
-  :user "Even",
-  :timestamp_ms 1673632929775}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 308,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1673602964666}
- {:type :framed,
-  :nr 308,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1673601961658}
- {:type :framed,
-  :nr 308,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1673588319441}
- {:type :framed,
-  :nr 308,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1673565452121}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 307,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1673520662721}
- {:type :framed,
-  :nr 307,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1673520660583}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 307,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1673518587242}
- {:type :framed,
-  :nr 307,
-  :score 3,
-  :user "Even",
-  :timestamp_ms 1673503505058}
- {:type :framed,
-  :nr 307,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1673499608350}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 306,
-  :score 6,
-  :user "Abdi",
-  :timestamp_ms 1673433967798}
- {:type :framed,
-  :nr 306,
-  :score 5,
-  :user "Even",
-  :timestamp_ms 1673431961057}
- {:type :framed,
-  :nr 306,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1673426665200}
- {:type :framed,
-  :nr 306,
-  :score 6,
-  :user "Vegard",
-  :timestamp_ms 1673424418928}
- {:type :framed,
-  :nr 306,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1673415003331}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 305,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1673333464241}
- {:type :framed,
-  :nr 305,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1673332345171}
- {:type :framed,
-  :nr 305,
-  :score 0,
-  :user "Einar",
-  :timestamp_ms 1673326722140}
- {:type :framed,
-  :nr 305,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1673307155646}
- {:type :framed,
-  :nr 305,
-  :score 4,
-  :user "Vegard",
-  :timestamp_ms 1673305781114}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 304,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1673253711923}
- {:type :episode,
-  :nr 19,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1673253484926}
- {:type :episode,
-  :nr 19,
-  :score 3,
-  :user "Lars",
-  :timestamp_ms 1673243066274}
- {:type :framed,
-  :nr 304,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1673242643853}
- {:type :episode,
-  :nr 19,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1673240966063}
- {:type :framed,
-  :nr 304,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1673240783643}
- {:type :episode,
-  :nr 19,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1673221928576}
- {:type :episode,
-  :nr 19,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1673220919261}
- {:type :framed,
-  :nr 304,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1673220908427}
- {:type :framed,
-  :nr 304,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1673220732093}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 303,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1673135229115}
- {:type :framed,
-  :nr 303,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1673135065415}
- {:type :framed,
-  :nr 303,
-  :score 3,
-  :user "Abdi",
-  :timestamp_ms 1673133314479}
- {:type :framed,
-  :nr 303,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1673132621661}
- {:type :framed,
-  :nr 303,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1673132538783}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 302,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1673080106747}
- {:type :framed,
-  :nr 302,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1673079670005}
- {:type :framed,
-  :nr 302,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1673075367772}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 302,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1673051226693}
- {:type :framed,
-  :nr 302,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1673050036020}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 301,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1672996929145}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 301,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1672987404690}
- {:type :framed,
-  :nr 301,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1672983053083}
- {:type :framed,
-  :nr 301,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1672960168143}
- {:type :framed,
-  :nr 301,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1672959728727}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 300,
-  :score 0,
-  :user "Lars",
-  :timestamp_ms 1672908276728}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 300,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1672906654733}
- {:type :framed,
-  :nr 300,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1672899616515}
- {:type :framed,
-  :nr 300,
-  :score 0,
-  :user "Einar",
-  :timestamp_ms 1672893577808}
- {:type :framed,
-  :nr 300,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1672875584226}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 299,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1672831659884}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 299,
-  :score 4,
-  :user "Vegard",
-  :timestamp_ms 1672828673615}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 299,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1672821676582}
- {:type :framed,
-  :nr 299,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1672814956904}
- {:type :framed,
-  :nr 299,
-  :score 6,
-  :user "Einar",
-  :timestamp_ms 1672809027100}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 298,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1672736665432}
- {:type :framed,
-  :nr 298,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1672734065172}
- {:type :framed,
-  :nr 298,
-  :score 4,
-  :user "Lars",
-  :timestamp_ms 1672733934187}
- {:type :framed,
-  :nr 298,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1672733497637}
- {:type :framed,
-  :nr 298,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1672721739490}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :episode,
-  :nr 18,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1672647221757}
- {:type :framed,
-  :nr 297,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1672647210289}
- {:type :framed,
-  :nr 297,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1672643585484}
- {:type :episode,
-  :nr 18,
-  :score 3,
-  :user "Even",
-  :timestamp_ms 1672643376336}
- {:type :episode,
-  :nr 18,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1672641508905}
- {:type :framed,
-  :nr 297,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1672641252692}
- {:type :episode,
-  :nr 18,
-  :score 3,
-  :user "Lars",
-  :timestamp_ms 1672628004234}
- {:type :framed,
-  :nr 297,
-  :score 0,
-  :user "Lars",
-  :timestamp_ms 1672627898423}
- {:type :episode,
-  :nr 18,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1672617841764}
- {:type :framed,
-  :nr 297,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1672617469974}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 296,
-  :score 0,
-  :user "Vegard",
-  :timestamp_ms 1672582339665}
- {:type :framed,
-  :nr 296,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1672532969840}
- {:type :not-framed, :user "Einar"}
- {:type :framed,
-  :nr 296,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1672529138962}
- {:type :framed,
-  :nr 296,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1672528701703}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 296,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1672527886821}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :framed,
-  :nr 295,
-  :score 2,
-  :user "Lars",
-  :timestamp_ms 1672476896616}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :framed,
-  :nr 295,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1672442717467}
- {:type :framed,
-  :nr 295,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1672441710226}
- {:type :framed,
-  :nr 295,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1672441564589}
- {:type :framed,
-  :nr 295,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1672441421794}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 294,
-  :score 4,
-  :user "Abdi",
-  :timestamp_ms 1672413833888}
- {:type :framed,
-  :nr 294,
-  :score 6,
-  :user "Vegard",
-  :timestamp_ms 1672394916114}
- {:type :framed,
-  :nr 294,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1672389477355}
- {:type :framed,
-  :nr 294,
-  :score 1,
-  :user "Even",
-  :timestamp_ms 1672384839582}
- {:type :framed,
-  :nr 294,
-  :score 3,
-  :user "Einar",
-  :timestamp_ms 1672384559247}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Lars"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :framed,
-  :nr 293,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1672297955964}
- {:type :framed,
-  :nr 293,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1672270997493}
- {:type :framed,
-  :nr 293,
-  :score 1,
-  :user "Vegard",
-  :timestamp_ms 1672269557481}
- {:type :framed,
-  :nr 293,
-  :score 1,
-  :user "Lars",
-  :timestamp_ms 1672268914207}
- {:type :framed,
-  :nr 293,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1672268644985}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 292,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1672215415497}
- {:type :framed,
-  :nr 292,
-  :score 1,
-  :user "Abdi",
-  :timestamp_ms 1672184203725}
- {:type :framed,
-  :nr 292,
-  :score 6,
-  :user "Lars",
-  :timestamp_ms 1672184052567}
- {:type :framed,
-  :nr 292,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1672183089659}
- {:type :framed,
-  :nr 292,
-  :score 1,
-  :user "Einar",
-  :timestamp_ms 1672182610503}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Even"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :framed,
-  :nr 291,
-  :score 2,
-  :user "Even",
-  :timestamp_ms 1672105575343}
- {:type :framed,
-  :nr 291,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1672099459513}
- {:type :framed,
-  :nr 291,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1672097182294}
- {:type :framed,
-  :nr 291,
-  :score 2,
-  :user "Lars",
-  :timestamp_ms 1672096615077}
- {:type :framed,
-  :nr 291,
-  :score 2,
-  :user "Einar",
-  :timestamp_ms 1672096422305}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Einar"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Abdi"}
- {:type :episode,
-  :nr 17,
-  :score 2,
-  :user "Abdi",
-  :timestamp_ms 1672061320572}
- {:type :framed,
-  :nr 290,
-  :score 0,
-  :user "Abdi",
-  :timestamp_ms 1672061285325}
- {:type :not-framed, :user "Abdi"}
- {:type :episode,
-  :nr 17,
-  :score 2,
-  :user "Lars",
-  :timestamp_ms 1672047527660}
- {:type :framed,
-  :nr 290,
-  :score 2,
-  :user "Lars",
-  :timestamp_ms 1672047444599}
- {:type :episode,
-  :nr 17,
-  :score 3,
-  :user "Even",
-  :timestamp_ms 1672043040441}
- {:type :framed,
-  :nr 290,
-  :score 4,
-  :user "Einar",
-  :timestamp_ms 1672040129168}
- {:type :episode,
-  :nr 17,
-  :score 7,
-  :user "Einar",
-  :timestamp_ms 1672040113629}
- {:type :episode,
-  :nr 17,
-  :score 3,
-  :user "Vegard",
-  :timestamp_ms 1672011189022}
- {:type :framed,
-  :nr 290,
-  :score 2,
-  :user "Vegard",
-  :timestamp_ms 1672010657788}
- {:type :framed,
-  :nr 290,
-  :score 0,
-  :user "Even",
-  :timestamp_ms 1672010316372}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Abdi"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Vegard"}
- {:type :not-framed, :user "Einar"}]
+ {:type :not-framed, :user "Abdi"}]
 )
