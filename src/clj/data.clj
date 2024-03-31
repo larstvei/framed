@@ -45,7 +45,11 @@
              ")\n")))
 
 (defn -main [& args]
-  (->>   ["resources/message_1.json" "resources/message_2.json"]
-         (mapcat read-data)
-         (vec)
-         (write-clj-file "src/cljs/framed/messages.cljs")))
+  (->> ["resources/message_1.json" "resources/message_2.json"]
+       (mapcat read-data)
+       (vec)
+       (write-clj-file "src/cljs/framed/messages.cljs")))
+
+(comment
+  (-main)
+  )
